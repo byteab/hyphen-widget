@@ -10,7 +10,7 @@ body {
   --toastify-color-progress-light: #615ccd;
 }
 
-#hyphen-widget {
+#hyphen-widget-app {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -48,25 +48,25 @@ body {
     0 -3px 1px hsla(250, 70%, 5%, 0.3) inset, 0 -2px 6px hsla(0, 0%, 100%, 0.25);
 }
 
-#hyphen-widget {
+#hyphen-widget-app {
   flex: 1;
   display: flex;
 }
 
-#hyphen-widget input[type="number"]::-webkit-inner-spin-button,
-#hyphen-widget input[type="number"]::-webkit-outer-spin-button {
+#hyphen-widget-app input[type="number"]::-webkit-inner-spin-button,
+#hyphen-widget-app input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-#hyphen-widget code {
+#hyphen-widget-app code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-#hyphen-widget * {
+#hyphen-widget-app * {
   box-sizing: border-box;
 }
 
