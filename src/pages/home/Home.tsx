@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 
 import { useWalletProvider } from "../../context/WalletProvider";
 import { useNavigate } from "react-router-dom";
@@ -7,8 +7,6 @@ import { useChains } from "../../context/Chains";
 import NetworkSelectors from "./components/NetworkSelectors";
 import TokenSelector from "./components/TokenSelector";
 import AmountInput from "./components/AmountInput";
-import Navbar from "components/Navbar";
-import Footer from "components/Footer";
 import TransactionFee from "./components/TransactionFee";
 import ChangeReceiverAddress from "./components/ChangeReceiverAddress";
 import CallToAction from "./components/CallToAction";
@@ -50,6 +48,7 @@ const Home: React.FC<HomeProps> = () => {
     hideModal: hideUserInfoModal,
     showModal: showUserInfoModal,
   } = useModal();
+
   const { executeApproveTokenError } = useTokenApproval()!;
 
   useEffect(() => {
@@ -61,8 +60,8 @@ const Home: React.FC<HomeProps> = () => {
   }, [isLoggedIn, navigate, connect]);
 
   return (
-    <div className="grid grid-rows-[4rem_1fr_3rem] w-full min-h-screen">
-      <Navbar showUserInfoModal={showUserInfoModal} />
+    //@ts-ignore
+    <div onClick={(e) => e.target === e.currentTarget && window.toggleHyphenWidgetVisibility()} className="grid grid-rows-[4rem_1fr_3rem] w-full min-h-screen bg-gray-500 bg-opacity-70">
       <ApprovalModal
         isVisible={isApprovalModalVisible}
         onClose={hideApprovalModal}
@@ -140,7 +139,6 @@ const Home: React.FC<HomeProps> = () => {
           <TransactionFee />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
