@@ -10,6 +10,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import AppProviders from "./context";
+import Home from "pages/home/Home";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,7 +21,7 @@ ReactDOM.render(
       </BrowserRouter>
     </AppProviders>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("hyphen-widget-app")
 );
 
 // If you want to start measuring performance in your app, pass a function
