@@ -61,7 +61,7 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     //@ts-ignore
-    <div onClick={(e) => e.target === e.currentTarget && window.toggleHyphenWidgetVisibility()} className="grid grid-rows-[4rem_1fr_3rem] w-full min-h-screen bg-gray-500 bg-opacity-70">
+    <div onClick={(e) => e.target === e.currentTarget && window.toggleHyphenWidgetVisibility()} className="grid grid-rows-[4rem_1fr_3rem] w-full min-h-screen bg-gray-800 bg-opacity-70">
       <ApprovalModal
         isVisible={isApprovalModalVisible}
         onClose={hideApprovalModal}
