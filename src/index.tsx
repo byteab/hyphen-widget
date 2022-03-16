@@ -8,16 +8,13 @@ import "react-toastify/dist/ReactToastify.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
 import AppProviders from "./context";
 
 ReactDOM.render(
   <React.StrictMode>
     <ToastContainer className="font-sans font-semibold"/>
     <AppProviders>
-      <BrowserRouter>
         <App />
-      </BrowserRouter>
     </AppProviders>
   </React.StrictMode>,
   document.getElementById("hyphen-widget-app")
