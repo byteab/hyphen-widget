@@ -12,10 +12,10 @@ module.exports = {
     extend: {
       colors: {
         "hyphen-purple": {
-          DEFAULT: "#615ccd",
-          dark: "#3f3c7e",
-          mid: "#464470",
-          darker: "#353358",
+          DEFAULT: getColorInitializer("var(--hyphen-default)"),
+          dark: getColorInitializer("var(--hyphen-dark)"),
+          mid: getColorInitializer("var(--hyphen-mid)"),
+          darker: getColorInitializer("var(--hyphen-darker)"),
         },
       },
     },
@@ -38,3 +38,15 @@ module.exports = {
     }),
   ],
 };
+
+function getColorInitializer(color) {
+  return ({ opacityVariable, opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(${color}, ${opacityValue})`;
+    }
+    if (opacityVariable !== undefined) {
+      return `rgba(${color}, var(${opacityVariable}, 1))`;
+    }
+    return `rgb(${color})`;
+  };
+}
