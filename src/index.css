@@ -6,8 +6,19 @@
   z-index: 100 !important;
 }
 
+#hyphen-widget-app {
+  --hyphen-default: 97, 92, 205;
+  --hyphen-dark: 63, 60, 126;
+  --hyphen-mid: 70, 68, 112;
+  --hyphen-darker: 53, 51, 88;
+}
+
 body {
   --toastify-color-progress-light: #615ccd;
+}
+
+#WEB3_CONNECT_MODAL_ID {
+  z-index: 9999;
 }
 
 #hyphen-widget-app {
@@ -16,7 +27,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 99999;
+  z-index: 999;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
