@@ -10,7 +10,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import AppProviders from "./context";
-import Home from "pages/home/Home";
 
 ReactDOM.render(
   <React.StrictMode>
