@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+// const bundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
   webpack: {
@@ -13,6 +14,7 @@ module.exports = {
           stream: require.resolve("stream-browserify"),
           assert: require.resolve("assert/"),
           buffer: require.resolve("buffer/"),
+          url: require.resolve("url/"),
           // util: require.resolve("util"),
         },
       },
@@ -23,7 +25,8 @@ module.exports = {
       plugins: [
         new webpack.ProvidePlugin({
           Buffer: ["buffer", "Buffer"],
-        })
+        }),
+        // new bundleAnalyzer({ analyzerMode: "server" }),
       ],
       ignoreWarnings: [{ message: /Failed to parse source map from/ }],
       optimization: {
