@@ -1,12 +1,12 @@
 # How to use the plugin
 
-Include these two tags inside your html file `<head/>` tag
+Include these two tags inside your html `<head/>` tag
 
 ```html
 <script type="application/javascript" defer src="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget/doc/hyphen-widget.js"/>
 <link href="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget/doc/main.css" rel="stylesheet" />
 ```
-Include this tag inside your html `<body />
+Include this tag inside your html `<body/>` tag
 ```html
 <div id="hyphen-widget-app"/>
 ```
