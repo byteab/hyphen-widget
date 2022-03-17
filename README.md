@@ -29,3 +29,6 @@ so this is wrong
 ## Available Scripts
 
 In the project directory, you can run:
+
+## yarn build:widget:prod
+Build the widget and copy the files to the doc directory
