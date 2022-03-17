@@ -1,10 +1,14 @@
 # How to use the plugin
 
-Include these two tags inside your html file
+Include these two tags inside your html file `<head/>` tag
 
-```js
+```html
 <script type="application/javascript" defer src="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget/doc/hyphen-widget.js"/>
 <link href="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget/doc/main.css" rel="stylesheet" />
+```
+Include this tag inside your html `<body />
+```html
+<div id="hyphen-widget-app"/>
 ```
 
 to popup the plugin you can call `window.toggleHyphenWidgetVisibility()` funcation from inside your app.
