@@ -1,5 +1,4 @@
 import { Switch } from "@headlessui/react";
-import { useState } from "react";
 
 interface IToggleProps {
   label: string;

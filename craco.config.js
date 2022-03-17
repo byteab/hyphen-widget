@@ -16,12 +16,35 @@ module.exports = {
           // util: require.resolve("util"),
         },
       },
+      devtool: "source-map",
+      output: {
+        filename: "hyphen-widget.js",
+      },
       plugins: [
         new webpack.ProvidePlugin({
           Buffer: ["buffer", "Buffer"],
-        }),
+        })
       ],
       ignoreWarnings: [{ message: /Failed to parse source map from/ }],
+      optimization: {
+        runtimeChunk: false,
+        splitChunks: {
+          chunks(chunk) {
+            return false;
+          },
+        },
+      },
     },
   },
+  plugins: [
+    {
+      plugin: {
+        overrideWebpackConfig: ({ webpackConfig }) => {
+          webpackConfig.plugins[5].options.filename = "[name].css";
+          return webpackConfig;
+        },
+      },
+      options: {},
+    },
+  ],
 };
