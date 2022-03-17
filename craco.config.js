@@ -1,6 +1,8 @@
 const webpack = require("webpack");
 // const bundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
   webpack: {
     configure: {
@@ -18,7 +20,7 @@ module.exports = {
           // util: require.resolve("util"),
         },
       },
-      devtool: "source-map",
+      devtool: isProduction ? false : "source-map",
       output: {
         filename: "hyphen-widget.js",
       },
