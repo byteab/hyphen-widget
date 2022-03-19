@@ -1,7 +1,8 @@
 name: build-on-release
-push:
-  tags:
-    - "v*"
+on:
+  push:
+    tags:
+      - "v*"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-          cache: 'yarn'
+          cache: "yarn"
       - run: yarn install --frozen-lock-file
       - run: yarn run build:widget:prod
       - run: rm -rf build
