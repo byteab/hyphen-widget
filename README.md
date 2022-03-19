@@ -1,10 +1,14 @@
 # How to use the plugin
 
-Include these two tags inside your html file
+Include these two tags inside your html `<head/>` tag
 
-```js
+```html
 <script type="application/javascript" defer src="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget/doc/hyphen-widget.js"/>
 <link href="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget/doc/main.css" rel="stylesheet" />
+```
+Include this tag inside your html `<body/>` tag
+```html
+<div id="hyphen-widget-app"/>
 ```
 
 to popup the plugin you can call `window.toggleHyphenWidgetVisibility()` funcation from inside your app.
@@ -29,3 +33,6 @@ so this is wrong
 ## Available Scripts
 
 In the project directory, you can run:
+
+## yarn run build:widget:prod
+Build the widget and copy the files to the doc directory
