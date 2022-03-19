@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: "14"
           cache: "yarn"
-      - run: yarn install --frozen-lock-file
+      - run: yarn install --frozen-lockfile
       - run: yarn run build:widget:prod
       - run: rm -rf build
       - name: Commit new build
