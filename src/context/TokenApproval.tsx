@@ -2,13 +2,13 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
-  useMemo,
-  useState,
+  // useEffect,
+  // useMemo,
+  // useState,
 } from "react";
 
 // @ts-ignore
-import { Hyphen, RESPONSE_CODES, SIGNATURE_TYPES } from "@biconomy/hyphen";
+// import { Hyphen, RESPONSE_CODES, SIGNATURE_TYPES } from "@biconomy/hyphen";
 
 import { useWalletProvider } from "context/WalletProvider";
 import { useChains } from "context/Chains";
@@ -16,9 +16,12 @@ import { useToken } from "context/Token";
 import useAsync, { Status } from "hooks/useLoading";
 import { useBiconomy } from "context/Biconomy";
 import { useHyphen } from "context/Hyphen";
-import { BigNumber, ethers } from "ethers";
+import {
+  // BigNumber,
+  ethers,
+} from "ethers";
 import { NATIVE_ADDRESS } from "config/constants";
-import { WebpackError } from "webpack";
+// import { WebpackError } from "webpack";
 import { useNotifications } from "./Notifications";
 
 interface ITokenApprovalContext {
@@ -205,6 +208,7 @@ const TokenApprovalProvider: React.FC = ({ ...props }) => {
     execute: executeApproveToken,
     status: executeApproveTokenStatus,
     error: executeApproveTokenError,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     value: executeApproveTokenResult,
   } = useAsync(approveToken);
 

@@ -4,11 +4,16 @@ import {
   useContext,
   useEffect,
   useMemo,
-  useState,
+  // useState,
 } from "react";
 
 // @ts-ignore
-import { Hyphen, RESPONSE_CODES, SIGNATURE_TYPES } from "@biconomy/hyphen";
+import {
+  Hyphen,
+  //  RESPONSE_CODES,
+  SIGNATURE_TYPES,
+  //@ts-ignore
+} from "@biconomy/hyphen";
 
 import { useWalletProvider } from "./WalletProvider";
 import { useChains } from "./Chains";

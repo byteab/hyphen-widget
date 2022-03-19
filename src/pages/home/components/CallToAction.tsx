@@ -21,10 +21,10 @@ export const CallToAction: React.FC<ICallToActionProps> = ({
   onTransferButtonClick,
 }) => {
   const {
-    executeApproveToken,
-    executeApproveTokenError,
+    // executeApproveToken,
+    // executeApproveTokenError,
     executeApproveTokenStatus,
-    fetchSelectedTokenApproval,
+    // fetchSelectedTokenApproval,
     fetchSelectedTokenApprovalError,
     fetchSelectedTokenApprovalStatus,
     fetchSelectedTokenApprovalValue,
@@ -34,6 +34,7 @@ export const CallToAction: React.FC<ICallToActionProps> = ({
   const { walletProvider, currentChainId, connect, isLoggedIn } =
     useWalletProvider()!;
   const {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     receiver: { receiverAddress, isReceiverValid },
     transactionAmountValidationErrors,
   } = useTransaction()!;

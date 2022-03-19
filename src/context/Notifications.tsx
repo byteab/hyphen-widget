@@ -1,6 +1,13 @@
-import { createContext, useContext, useEffect } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import { ethers } from "ethers";
+import {
+  createContext,
+  useContext,
+  // useEffect
+} from "react";
+import {
+  //  ToastContainer,
+  toast,
+} from "react-toastify";
+// import { ethers } from "ethers";
 
 interface INotificationsContext {
   addTxNotification: (tx: any, type: string, explorerUrl: string) => void;

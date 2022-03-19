@@ -1,15 +1,15 @@
 import PrimaryButtonLight from "components/Buttons/PrimaryButtonLight";
-import { Toggle } from "components/Toggle";
-import React, { Fragment, useState } from "react";
-import { FaInfoCircle } from "react-icons/fa";
+// import { Toggle } from "components/Toggle";
+import React from "react";
+// import { FaInfoCircle } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { defaultMaxListeners } from "stream";
-import { twMerge } from "tailwind-merge";
+// import { defaultMaxListeners } from "stream";
+// import { twMerge } from "tailwind-merge";
 
-import { Dialog, Transition } from "@headlessui/react";
+import { Dialog } from "@headlessui/react";
 import Modal from "components/Modal";
-import { useTokenApproval } from "context/TokenApproval";
-import { useTransaction } from "context/Transaction";
+// import { useTokenApproval } from "context/TokenApproval";
+// import { useTransaction } from "context/Transaction";
 import useErrorModal from "hooks/useErrorModal";
 
 export interface IErrorModalProps {
@@ -21,7 +21,7 @@ export const ErrorModal: React.FC<IErrorModalProps> = ({ error, title }) => {
   const {
     isErrorModalVisible: isVisible,
     hideErrorModal,
-    showErrorModal,
+    // showErrorModal,
   } = useErrorModal(error);
 
   return (

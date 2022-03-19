@@ -31,7 +31,7 @@ export const TransferInfoModal: React.FC<ITransferInfoModal> = ({
     value: exitInfo,
     execute: getExitInfo,
     status: getExitInfoStatus,
-    error: getExitInfoError,
+    // error: getExitInfoError,
   } = useAsync(getExitInfoFromHash);
 
   const fromChainExplorerUrl = `${

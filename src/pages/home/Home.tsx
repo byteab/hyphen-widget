@@ -18,9 +18,9 @@ import TransferModal from "./components/TransferModal";
 import UserInfoModal from "./components/UserInfoModal";
 import { useTransaction } from "context/Transaction";
 import { useBiconomy } from "context/Biconomy";
-import { twMerge } from "tailwind-merge";
+// import { twMerge } from "tailwind-merge";
 import CustomTooltip from "./components/CustomTooltip";
-import { FaInfoCircle } from "react-icons/fa";
+// import { FaInfoCircle } from "react-icons/fa";
 import { HiInformationCircle } from "react-icons/hi";
 
 interface HomeProps {}
@@ -44,6 +44,7 @@ const Home: React.FC<HomeProps> = () => {
   const {
     isVisible: isUserInfoModalVisible,
     hideModal: hideUserInfoModal,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     showModal: showUserInfoModal,
   } = useModal();
 

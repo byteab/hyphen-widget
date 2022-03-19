@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "react-loading-skeleton/dist/skeleton.css";
 
-import { ToastContainer, toast } from "react-toastify";
+import {
+  ToastContainer,
+  // toast
+} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import App from "./App";
@@ -12,9 +15,9 @@ import AppProviders from "./context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ToastContainer className="font-sans font-semibold"/>
+    <ToastContainer className="font-sans font-semibold" />
     <AppProviders>
-        <App />
+      <App />
     </AppProviders>
   </React.StrictMode>,
   document.getElementById("hyphen-widget-app")

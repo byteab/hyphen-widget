@@ -1,7 +1,7 @@
 import { TokenConfig } from ".";
-import { AVALANCHE } from "../chains/constants/Avalanche";
+// import { AVALANCHE } from "../chains/constants/Avalanche";
 import { ETHEREUM } from "../chains/constants/Ethereum";
-import { FUJI } from "../chains/constants/Fuji";
+// import { FUJI } from "../chains/constants/Fuji";
 import { GOERLI } from "../chains/constants/Goerli";
 import { MUMBAI } from "../chains/constants/Mumbai";
 import { POLYGON } from "../chains/constants/Polygon";

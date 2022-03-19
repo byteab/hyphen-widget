@@ -29,9 +29,9 @@ import toFixed from "utils/toFixed";
 import formatRawEthValue from "utils/formatRawEthValue";
 import useAsync, { Status } from "hooks/useLoading";
 import { useWalletProvider } from "./WalletProvider";
-import { IoMdReturnLeft } from "react-icons/io";
+// import { IoMdReturnLeft } from "react-icons/io";
 import { useBiconomy } from "./Biconomy";
-import { exit } from "process";
+// import { exit } from "process";
 import { useNotifications } from "./Notifications";
 
 export enum ValidationErrors {
@@ -104,13 +104,13 @@ const TransactionProvider: React.FC = (props) => {
   const [exitHash, setExitHash] = useState<string>();
 
   const {
-    executeApproveToken,
-    executeApproveTokenError,
+    // executeApproveToken,
+    // executeApproveTokenError,
     executeApproveTokenStatus,
     fetchSelectedTokenApproval,
-    fetchSelectedTokenApprovalError,
-    fetchSelectedTokenApprovalStatus,
-    fetchSelectedTokenApprovalValue,
+    // fetchSelectedTokenApprovalError,
+    // fetchSelectedTokenApprovalStatus,
+    // fetchSelectedTokenApprovalValue,
   } = useTokenApproval()!;
 
   const [errors, setErrors] = useState<ValidationErrors[]>([]);

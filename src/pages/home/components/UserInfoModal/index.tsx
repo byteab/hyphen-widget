@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { gql, NetworkStatus, useQuery } from "@apollo/client";
-import { BigNumber, ethers } from "ethers";
+import { ethers } from "ethers";
 import { Dialog } from "@headlessui/react";
 import Skeleton from "react-loading-skeleton";
 import { useWalletProvider } from "context/WalletProvider";
@@ -10,7 +10,7 @@ import {
   HiOutlineClipboardCopy,
   HiOutlineClipboardCheck,
   HiOutlineArrowNarrowRight,
-  HiOutlineArrowSmRight,
+  // HiOutlineArrowSmRight,
   HiOutlineRefresh,
 } from "react-icons/hi";
 import Modal from "../../../../components/Modal";

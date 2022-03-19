@@ -17,7 +17,10 @@ interface IBiconomyContext {
 const BiconomyContext = createContext<IBiconomyContext | null>(null);
 
 const BiconomyProvider: React.FC = (props) => {
-  const { rawEthereumProvider, walletProvider } = useWalletProvider()!;
+  const {
+    rawEthereumProvider,
+    //  walletProvider
+  } = useWalletProvider()!;
   const { fromChainRpcUrlProvider, fromChain, areChainsReady } = useChains()!;
 
   const [isBiconomyReady, setIsBiconomyReady] = useState(false);
