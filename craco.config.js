@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const CompressionPlugin = require("compression-webpack-plugin");
 // const bundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const isProduction = process.env.NODE_ENV === 'production'
@@ -29,6 +30,7 @@ module.exports = {
           Buffer: ["buffer", "Buffer"],
         }),
         // new bundleAnalyzer({ analyzerMode: "server" }),
+        ...isProduction ? [new CompressionPlugin({algorithm: "gzip"})] : []
       ],
       ignoreWarnings: [{ message: /Failed to parse source map from/ }],
       optimization: {

@@ -37,7 +37,7 @@
     "build:prod": "REACT_APP_ENV=production REACT_APP_INFURA_ID=https://mainnet.infura.io/v3/c9c349cef85a436eaad2f5ef6c067f3a craco build",
     "build:test": "REACT_APP_ENV=test craco build",
     "build:staging": "REACT_APP_ENV=staging craco build",
-    "build:widget:prod": "NODE_ENV=production && yarn run build:prod && cp ./build/hyphen-widget.js ./build/main.css doc",
+    "build:widget:prod": "NODE_ENV=production && yarn run build:prod && cp ./build/hyphen-widget.js ./build/main.css ./build/hyphen-widget.js.gz ./build/main.css.gz doc",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -73,6 +73,7 @@
     "assert": "^2.0.0",
     "autoprefixer": "^9.0.0",
     "buffer": "^6.0.3",
+    "compression-webpack-plugin": "^9.2.0",
     "craco-alias": "^3.0.1",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
