@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .web3modal-modal-lightbox {
-  z-index: 100 !important;
+  z-index: 99999 !important;
 }
 
 #hyphen-widget-app {
