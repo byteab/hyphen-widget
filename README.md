@@ -3,8 +3,8 @@
 Include these two tags inside your html `<head/>` tag
 
 ```html
-<script type="application/javascript" defer src="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@0.1.2/doc/hyphen-widget.js"/>
-<link href="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@0.1.2/doc/main.css" rel="stylesheet" />
+<script type="application/javascript" defer src="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@0.1.3/doc/hyphen-widget.js"/>
+<link href="https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@0.1.3/doc/main.css" rel="stylesheet" />
 ```
 Include this tag inside your html `<body/>` tag
 ```html
