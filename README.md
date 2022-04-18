@@ -11,6 +11,9 @@ Include this tag inside your html `<body/>` tag
 <div id="hyphen-widget-app"/>
 ```
 
+ ### Here is a demo
+ https://stackblitz.com/edit/vitejs-vite-lg2vsg?file=index.html
+
 to popup the plugin you can call `window.toggleHyphenWidgetVisibility()` funcation from inside your app.
 
 to customize the colors and fonts of the plugin
