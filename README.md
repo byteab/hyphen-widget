@@ -38,5 +38,8 @@ Note: please make sure to provide colors as `rgb`. and the syntax of rgb should 
 
 In the project directory, you can run:
 
+## yarn run start
+start the project for local testing
+
 ## yarn run build:widget:prod
 Build the widget and copy the files to the doc directory
