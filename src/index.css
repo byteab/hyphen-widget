@@ -22,7 +22,7 @@ body {
 }
 
 #WEB3_CONNECT_MODAL_ID {
-  z-index: 9999;
+  z-index: 99999 !important;
 }
 
 #hyphen-widget-app {
