@@ -13,7 +13,7 @@ Include this tag inside your html `<body/>` tag
 
 to popup the plugin you can call `window.toggleHyphenWidgetVisibility()` funcation from inside your app.
 
-to customize the color of the plugin
+to customize the colors and fonts of the plugin
 you can override these variables inside your css file
 ```css
 #hyphen-widget-app {
@@ -21,12 +21,17 @@ you can override these variables inside your css file
   --hyphen-dark: 63, 60, 126;
   --hyphen-mid: 70, 68, 112;
   --hyphen-darker: 53, 51, 88;
+  --font-regular: url(/assets/fonts/Inter-Regular.ttf);
+  --font-medium: url(/assets/fonts/Inter-Regular.ttf/Inter-Medium.ttf);
+  --font-bold: url(/assets/fonts/Inter-Regular.ttf/Inter-Bold.ttf);
+  --font-semibold: url(/assets/fonts/Inter-Regular.ttf/Inter-SemiBold.ttf);
 }
 ```
-Note: please make sure to provide them as `rgb` and the syntax of rgb should not inclulde `rgb()` function
+Note: please make sure to provide colors as `rgb` and the syntax of rgb should not inclulde `rgb()` function
 so this is wrong
 ```css
   --hyphen-default: rgb(97, 92, 205); // ❌
+  --hyphen-default: 97, 92, 205; // ✅
 ```
 
 
