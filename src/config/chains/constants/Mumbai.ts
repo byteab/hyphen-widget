@@ -1,10 +1,10 @@
 import { ChainConfig } from "..";
 import { NATIVE_ADDRESS } from "../../constants";
-import maticIcon from "../../../assets/images/tokens/matic-icon.svg"
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const MUMBAI: ChainConfig = {
   name: "Mumbai",
-  image: maticIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/matic-icon.svg',
   subText: "Polygon testnet",
   chainId: 80001,
   rpcUrl: "https://polygon-mumbai.g.alchemy.com/v2/koip0q462Cbc5DamKmEseGHmbEBDTJR0",

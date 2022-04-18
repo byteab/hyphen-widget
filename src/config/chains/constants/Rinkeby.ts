@@ -1,10 +1,10 @@
 import { ChainConfig } from "..";
 import { NATIVE_ADDRESS } from "../../constants";
-import ethIcon from "../../../assets/images/tokens/eth-icon.svg"
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const RINKEBY: ChainConfig = {
   name: "Rinkeby",
-  image: ethIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/eth-icon.svg',
   subText: "Ethereum testnet",
   chainId: 4,
   rpcUrl: "https://rinkeby.infura.io/v3/d126f392798444609246423b06116c77",

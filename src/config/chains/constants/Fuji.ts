@@ -1,10 +1,10 @@
 import { ChainConfig } from "..";
 import { NATIVE_ADDRESS } from "../../constants";
-import avaxIcon from "../../../assets/images/tokens/avax-icon.svg"
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const FUJI: ChainConfig = {
   name: "Fuji",
-  image: avaxIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/avax-icon.svg',
   subText: "Avalanche testnet",
   chainId: 43113,
   rpcUrl: "https://api.avax-test.network/ext/bc/C/rpc",

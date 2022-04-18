@@ -1,10 +1,10 @@
 import { ChainConfig } from "..";
 import { NATIVE_ADDRESS } from "../../constants";
-import maticIcon from "../../../assets/images/tokens/matic-icon.svg"
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const POLYGON: ChainConfig = {
   name: "Polygon",
-  image: maticIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/matic-icon.svg',
   subText: "Polygon Mainnet",
   chainId: 137,
   rpcUrl: "https://polygon-rpc.com/",

@@ -1,10 +1,10 @@
 import { ChainConfig } from "..";
 import { NATIVE_ADDRESS } from "../../constants";
-import ethIcon from "../../../assets/images/tokens/eth-icon.svg"
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const GOERLI: ChainConfig = {
   name: "Goerli",
-  image: ethIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/eth-icon.svg',
   subText: "Ethereum testnet",
   chainId: 5,
   rpcUrl: "https://eth-goerli.alchemyapi.io/v2/meF8z-onSwabyq4wsaR0ApbqV9vrYDpn",

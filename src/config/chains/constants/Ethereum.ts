@@ -1,10 +1,10 @@
 import { ChainConfig } from "..";
 import { NATIVE_ADDRESS } from "../../constants";
-import ethIcon from "../../../assets/images/tokens/eth-icon.svg"
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const ETHEREUM: ChainConfig = {
   name: "Ethereum",
-  image: ethIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/eth-icon.svg',
   subText: "Ethereum Mainnet",
   chainId: 1,
   rpcUrl: "https://eth-mainnet.alchemyapi.io/v2/wO7WAmNPAsZFhRlpd-xYjM-5Pl5Dx8-G",

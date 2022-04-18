@@ -1,0 +1,1 @@
+export const PUBLIC_ASSETS_URL = "https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@master/public/assets"

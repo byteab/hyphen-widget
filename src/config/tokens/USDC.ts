@@ -4,11 +4,11 @@ import { ETHEREUM } from "../chains/constants/Ethereum";
 import { GOERLI } from "../chains/constants/Goerli";
 import { MUMBAI } from "../chains/constants/Mumbai";
 import { POLYGON } from "../chains/constants/Polygon";
-import usdcIcon from "../../assets/images/tokens/usdc-icon.svg";
+import { PUBLIC_ASSETS_URL } from "constants/variables";
 
 export const USDC: TokenConfig = {
   symbol: "USDC",
-  image: usdcIcon,
+  image: PUBLIC_ASSETS_URL + '/images/tokens/usdc-icon.svg',
   [MUMBAI.chainId]: {
     address: "0xdA5289fCAAF71d52a80A254da614a192b693e977",
     transferOverhead: 116000,
