@@ -27,8 +27,7 @@ you can override these variables inside your css file
   --font-semibold: url(/assets/fonts/Inter-Regular.ttf/Inter-SemiBold.ttf);
 }
 ```
-Note: please make sure to provide colors as `rgb` and the syntax of rgb should not inclulde `rgb()` function
-so this is wrong
+Note: please make sure to provide colors as `rgb`. and the syntax of rgb should not inclulde `rgb()` function
 ```css
   --hyphen-default: rgb(97, 92, 205); // ❌
   --hyphen-default: 97, 92, 205; // ✅
