@@ -11,6 +11,10 @@
   --hyphen-dark: 63, 60, 126;
   --hyphen-mid: 70, 68, 112;
   --hyphen-darker: 53, 51, 88;
+  --font-regular: url(https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@master/public/assets/fonts/inter/Inter-Regular.ttf);
+  --font-medium: url(https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@master/public/assets/fonts/inter/Inter-Medium.ttf);
+  --font-bold: url(https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@master/public/assets/fonts/inter/Inter-Bold.ttf);
+  --font-semibold: url(https://cdn.jsdelivr.net/gh/TheEhsanSarshar/hyphen-widget@master/public/assets/fonts/inter/Inter-SemiBold.ttf);
 }
 
 body {
@@ -34,23 +38,23 @@ body {
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter"), url(./assets/fonts/inter/Inter-Regular.ttf) format("ttf");
+  src: local("Inter"), var(--font-regular) format("ttf");
 }
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter"), url(./assets/fonts/inter/Inter-Medium.ttf) format("ttf");
+  src: local("Inter"), var(--font-medium) format("ttf");
 }
 
 @font-face {
   font-family: "Inter";
   src: local("Inter"),
-    url(./assets/fonts/inter/Inter-SemiBold.ttf) format("ttf");
+    var(--font-semibold) format("ttf");
 }
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter"), url(./assets/fonts/inter/Inter-Bold.ttf) format("ttf");
+  src: local("Inter"), var(--font-bold) format("ttf");
 }
 
 
